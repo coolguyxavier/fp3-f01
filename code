@@ -1,0 +1,63 @@
+# - FP3-F01 Libraries- #
+# - Xzavier Moosomin - #
+# 04/10/2024 - #
+# \\Code - #
+# - To utilize different modules, being either pre-made or custom - #
+
+# - Imports - #
+from food import meattypes
+from food import proteintypes
+from time import sleep
+
+# - Dictionaries - #
+
+foundfoods = { }
+
+# - Code - #
+
+print("Looks like you're gonna be playing with food today.")
+
+sleep(2)
+print("Go find a random meat.")
+
+sleep(2)
+print("Damn, looks like you found some", meattypes.foundmeat)
+
+sleep(2)
+print("Now you should find some chicken or something.")
+
+sleep(2)
+found_prot = proteintypes.findprotein()
+print("Hey! You found some", found_prot)
+
+sleep(2)
+foundtype = proteintypes.findtype(found_prot)
+print("Man, and it's a", foundtype)
+
+sleep(2)
+print("Nice job.")
+
+sleep(2)
+print("Well, what do you all have?")
+
+sleep(2)
+print(meattypes.foundmeat, "and a", found_prot, "that is a", foundtype)
+
+sleep(2)
+print("Well, what can you do with them?")
+
+sleep(2)
+print("Well, I dunno. Eat them?")
+
+foundfoods[found_prot] = foundtype
+foundfoods[meattypes.foundmeat] = 1
+
+sleep(2)
+print("You have some cool things now, so that's cool.")
+
+sleep(2)
+print("They're in your inventory.")
+
+sleep(2)
+print("Look, they're right there.")
+print(foundfoods)
