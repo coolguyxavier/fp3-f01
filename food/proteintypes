@@ -1,1 +1,24 @@
+# - FP3-F01 Libraries - #
+# - Xzavier Moosomin - #
+# - 04/10/2024 - #
+# - To return values using dictionaries into a different main file - #
+# - Path \\Code \Food \proteintypes
 
+# - Imports - #
+from random import choice
+
+# - Dictionaries - #
+
+proteins = {"Pork": 'Thigh', "Chicken": 'Drumstick', "Goat": 'Brain'}
+
+# - Functions - #
+
+def findprotein():
+    randfood = choice(list(proteins))
+    return randfood
+    
+def findtype(food):
+    foodtype = proteins[food]
+    return foodtype
+
+# - Code - #
