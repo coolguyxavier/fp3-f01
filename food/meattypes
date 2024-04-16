@@ -1,1 +1,17 @@
+# - FP3-F01 Libraries - #
+# - Xzavier Moosomin - #
+# - 04/10/2024 - #
+# - To show different meats in a list - #
+# - Path - \\Code \food \meattypes - #
 
+# - Imports - #
+
+from random import choice
+
+# - Lists - #
+
+meats = ["Cow", "Moose", "Dog", "Cat", "Sheep", "Elk", "Deer"]
+
+# - Code - #
+
+foundmeat = choice(meats)
